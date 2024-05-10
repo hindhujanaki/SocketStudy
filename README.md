@@ -73,12 +73,14 @@ c.close()
 ## Output
 ![image](https://github.com/hindhujanaki/SocketStudy/assets/148514666/9dd454b8-9abe-4d83-bbe0-0781582615d9)
 ## Server:
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 print(s.getsockname())
 print(s.recv(1024).decode())
 s.send("acknowledgement recived from the server".encode())
+```
 ## Output:
 ![image](https://github.com/hindhujanaki/SocketStudy/assets/148514666/c1143c5e-1d55-478c-91ea-34dd04f00779)
 
